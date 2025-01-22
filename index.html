@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pioche de cartes</title>
+	<style>
+		#cards-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		#cards-container h1 {
+			text-align: center;
+		}
+
+		.card {
+			width: 70mm;
+			height: 99mm;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			padding: 10px;
+			background-color: white;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			box-sizing: border-box;
+			white-space: pre-line;
+		}
+
+		article>div {
+			height: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<button onclick="getRandomCards()">Tirer des cartes</button>
+	<select id="cards-selector" name="cardSelector" onchange="getCards(this.value)">
+		<option>Selectionner des cartes</option>
+	</select>
+	<p>Cartes numéro : <span id="cards-number"></span></p>
+	<section id="cards-container">
+		<article id="connaissance" class="card">
+			<h1>Connaissance</h1>
+			<div id="connaissance-content"></div>
+		</article>
+		<article id="example" class="card">
+			<h1>Exemple</h1>
+			<div id="example-content"></div>
+		</article>
+		<article id="defi" class="card">
+			<h1>Défi</h1>
+			<div id="defi-content"></div>
+		</article>
+	</section>
+	<script>
+		// Charger le fichier JSON
+		let cards = [];
+		let cardSelector = document.getElementById("cards-selector");
+
+		fetch('cards.json')
+			.then(response => response.json())
+			.then(data => {
+				cards = data.cards;
+				cards.forEach((el, i) => {
+					let option = document.createElement('option');
+					option.setAttribute("value", i);
+					option.textContent = `N° ${i + 1}`;
+					cardSelector.appendChild(option);
+				}
+				);
+			})
+			.catch(error => console.error('Erreur lors du chargement du JSON:', error));
+
+		let cardContainer = document.getElementById("cards-container");
+
+		// Create connaissance Card
+		const connaissanceCard = document.getElementById("connaissance-content");
+		const connaissance = document.createElement('p');
+		connaissanceCard.appendChild(connaissance);
+
+		// Create example Card
+		const exampleCard = document.getElementById("example-content");
+		const example = document.createElement('p');
+		exampleCard.appendChild(example);
+
+		// Create defi Card
+		const defiCard = document.getElementById("defi-content");
+		const defi = document.createElement('p');
+		defiCard.appendChild(defi);
+
+		let cardNumberContainer = document.getElementById("cards-number");
+
+		function getRandomCards() {
+			let randomNumber = Math.floor(Math.random() * cards.length);
+			// Change text content
+			cardNumberContainer.textContent = randomNumber + 1;
+			connaissance.textContent = cards[randomNumber].connaissance;
+			example.textContent = cards[randomNumber].example;
+			defi.textContent = cards[randomNumber].defi;
+		}
+
+		function getCards(num) {
+			cardNumberContainer.textContent = parseInt(num) + 1;
+			connaissance.textContent = cards[num].connaissance;
+			example.textContent = cards[num].example;
+			defi.textContent = cards[num].defi;
+		}
+	</script>
+</body>
+
+</html>

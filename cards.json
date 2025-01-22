@@ -1,0 +1,164 @@
+{
+  "cards": [
+    {
+      "connaissance": "La structure de base d'une page HTML est composée de plusieurs éléments : la déclaration du type de document (DOCTYPE), les balises <html>, <head> et <body>. Le <head> contient des informations sur la page, comme le titre, tandis que le <body> contient le contenu visible de la page.",
+      "example": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Exemple de page</title>\n</head>\n<body>\n  <h1>Titre principal de la page</h1>\n  <p>Ce texte est un paragraphe simple.</p>\n</body>\n</html>",
+      "defi": "Crée une page HTML avec un titre, un paragraphe et une liste à puces contenant trois éléments."
+    },
+    {
+      "connaissance": "Les sélecteurs CSS permettent de cibler des éléments HTML pour appliquer des styles. Les sélecteurs peuvent cibler des éléments par leur balise, leur classe ou leur identifiant. Les styles incluent des propriétés comme la couleur, la taille de police et le type de police.",
+      "example": "h1 {\n  color: red;\n  font-size: 32px;\n}\n\np {\n  color: green;\n  font-family: 'Verdana', sans-serif;\n}",
+      "defi": "Applique un style CSS à une page HTML en modifiant la couleur du texte des titres et la police des paragraphes."
+    },
+    {
+      "connaissance": "Les balises de formulaire HTML permettent de créer des interfaces interactives avec l'utilisateur. Elles incluent des éléments comme <input>, <textarea>, <button> et <select>, qui permettent à l'utilisateur de saisir des informations.",
+      "example": "<form>\n  <label for=\"nom\">Nom:</label>\n  <input type=\"text\" id=\"nom\" name=\"nom\"><br>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\"><br>\n  <input type=\"submit\" value=\"Envoyer\">\n</form>",
+      "defi": "Crée un formulaire HTML avec un champ de texte pour le nom, un champ de texte pour l'email et un bouton d'envoi."
+    },
+    {
+      "connaissance": "Les classes CSS sont utilisées pour appliquer des styles à un groupe d'éléments HTML, tandis que les identifiants (ID) sont utilisés pour cibler un seul élément unique. Les classes sont souvent utilisées pour des styles réutilisables, tandis que les ID doivent être uniques dans une page.",
+      "example": ".container {\n  width: 90%;\n  margin: 0 auto;\n}\n\n#header {\n  background-color: #333;\n  color: white;\n  padding: 10px;\n}",
+      "defi": "Utilise une classe pour styliser un conteneur et un identifiant pour l'en-tête d'une page."
+    },
+    {
+      "connaissance": "Les propriétés de mise en page CSS comme display, margin et padding permettent de contrôler l'alignement des éléments et les espacements dans une page. `display: flex` est utilisé pour organiser les éléments de manière flexible, tandis que `margin` et `padding` sont utilisés pour contrôler les espacements externes et internes.",
+      "example": "div {\n  display: flex;\n  justify-content: space-between;\n  padding: 20px;\n}\n\np {\n  margin: 10px;\n}",
+      "defi": "Crée un conteneur avec plusieurs éléments à l'intérieur, en utilisant `display: flex` pour organiser les éléments et en ajustant les marges et les espacements internes."
+    },
+    {
+      "connaissance": "Les balises HTML sémantiques (comme <article>, <section>, <header>, <footer>, etc.) permettent de structurer le contenu d'une page de manière logique et accessible. Ces balises améliorent l'organisation du code et aident les moteurs de recherche et les technologies d'assistance à mieux comprendre la structure du contenu.",
+      "example": "<header>\n  <h1>Bienvenue sur mon site</h1>\n  <nav>\n    <ul>\n      <li><a href=\"#\">Accueil</a></li>\n      <li><a href=\"#\">À propos</a></li>\n    </ul>\n  </nav>\n</header>\n<section>\n  <h2>Nos services</h2>\n  <p>Nous offrons des services de développement web.</p>\n</section>",
+      "defi": "Crée une page HTML utilisant des balises sémantiques telles que <header>, <section>, et <footer> pour structurer le contenu."
+    },
+    {
+      "connaissance": "Les propriétés de positionnement CSS (position, top, left, right, bottom) permettent de déplacer des éléments sur la page de manière absolue, relative ou fixe. `position: absolute` permet de placer un élément en fonction de son conteneur parent, tandis que `position: fixed` le place par rapport à la fenêtre du navigateur.",
+      "example": "div {\n  position: absolute;\n  top: 50px;\n  left: 100px;\n}\n\nfooter {\n  position: fixed;\n  bottom: 0;\n  width: 100%;\n  background-color: #333;\n  color: white;\n}",
+      "defi": "Positionne un élément dans la page à l'aide de `position: absolute` et place un pied de page fixe en bas de la page."
+    },
+    {
+      "connaissance": "Les tableaux HTML (<table>, <tr>, <th>, <td>) sont utilisés pour afficher des données sous forme de lignes et de colonnes. Chaque ligne de tableau est définie par la balise <tr>, chaque cellule d'en-tête par <th>, et chaque cellule de données par <td>.",
+      "example": "<table>\n  <tr>\n    <th>Nom</th>\n    <th>Âge</th>\n  </tr>\n  <tr>\n    <td>Alice</td>\n    <td>30</td>\n  </tr>\n  <tr>\n    <td>Bob</td>\n    <td>25</td>\n  </tr>\n</table>",
+      "defi": "Crée un tableau HTML avec des colonnes pour le nom et l'âge de plusieurs personnes."
+    },
+    {
+      "connaissance": "Les médias queries CSS permettent de modifier les styles en fonction de certaines conditions, comme la taille de l'écran ou l'orientation de l'appareil. Cela est essentiel pour créer des pages web réactives qui s'ajustent à différents appareils.",
+      "example": "@media (max-width: 600px) {\n  body {\n    font-size: 14px;\n  }\n  h1 {\n    font-size: 20px;\n  }\n}",
+      "defi": "Utilise une media query pour changer la taille de la police sur les écrans ayant une largeur maximale de 600px."
+    },
+    {
+      "connaissance": "Les éléments de formulaire HTML peuvent être validés avant d'être envoyés à un serveur. Les attributs comme `required`, `pattern`, et `min`/`max` permettent de spécifier des critères de validation pour les champs de formulaire.",
+      "example": "<form>\n  <label for=\"age\">Âge :</label>\n  <input type=\"number\" id=\"age\" name=\"age\" min=\"18\" required><br>\n  <input type=\"submit\" value=\"Envoyer\">\n</form>",
+      "defi": "Crée un formulaire avec un champ d'âge qui ne permet d'entrer que des valeurs supérieures ou égales à 18 et qui est requis."
+    },
+    {
+      "connaissance": "Les animations CSS permettent de créer des transitions fluides entre différents états d'un élément. En utilisant des propriétés comme `@keyframes`, on peut définir des animations complexes qui se produisent au fil du temps.",
+      "example": "@keyframes slide {\n  0% {\n    transform: translateX(0);\n  }\n  100% {\n    transform: translateX(100px);\n  }\n}\n\n.box {\n  animation: slide 2s ease-in-out;\n}",
+      "defi": "Crée une animation CSS qui déplace un élément de 0 à 100 pixels vers la droite sur une durée de 2 secondes."
+    },
+    {
+      "connaissance": "Les images HTML sont ajoutées à une page web à l'aide de la balise <img>. L'attribut `src` spécifie l'emplacement de l'image, tandis que l'attribut `alt` fournit un texte alternatif pour les cas où l'image ne peut pas être chargée ou pour améliorer l'accessibilité.",
+      "example": "<img src=\"image.jpg\" alt=\"Une belle vue de la nature\" width=\"500\" height=\"300\">",
+      "defi": "Ajoute une image à ta page web avec un texte alternatif, une largeur et une hauteur définies."
+    },
+    {
+      "connaissance": "Les liens HTML sont créés à l'aide de la balise <a>. L'attribut `href` spécifie l'URL de la page vers laquelle le lien dirige. Il est possible d'ouvrir le lien dans un nouvel onglet en ajoutant l'attribut `target=\"_blank\"`.",
+      "example": "<a href=\"https://www.example.com\" target=\"_blank\">Visitez notre site</a>",
+      "defi": "Crée un lien qui ouvre une autre page dans un nouvel onglet."
+    },
+    {
+      "connaissance": "Les pseudo-classes CSS sont utilisées pour appliquer des styles à un élément dans un état spécifique. Par exemple, `:hover` est utilisé pour changer le style d'un élément lorsque l'utilisateur survole cet élément avec la souris.",
+      "example": "a:hover {\n  color: red;\n  text-decoration: underline;\n}",
+      "defi": "Ajoute un style CSS à un lien pour qu'il devienne rouge et soit souligné lorsqu'il est survolé."
+    },
+    {
+      "connaissance": "Le modèle de boîte CSS (box model) définit la façon dont les éléments HTML sont affichés, en prenant en compte les bordures, les marges, le remplissage (padding) et le contenu. Ces éléments peuvent être manipulés avec des propriétés CSS comme `border`, `margin`, `padding`, et `width`.",
+      "example": "div {\n  width: 200px;\n  padding: 20px;\n  border: 5px solid black;\n  margin: 10px;\n}",
+      "defi": "Crée un élément avec une largeur de 200px, un remplissage de 20px, une bordure de 5px et une marge de 10px."
+    },
+    {
+      "connaissance": "Les flexbox CSS permettent de disposer les éléments de manière flexible et réactive. En utilisant `display: flex`, les éléments enfants d'un conteneur sont organisés dans une direction, soit en ligne (horizontalement), soit en colonne (verticalement).",
+      "example": ".container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}",
+      "defi": "Crée un conteneur avec plusieurs éléments alignés au centre horizontalement et verticalement à l'aide de Flexbox."
+    },
+    {
+      "connaissance": "Les variables CSS permettent de définir des valeurs réutilisables dans un fichier CSS. Elles sont définies avec `--nom-de-variable` et peuvent être utilisées à l'aide de `var(--nom-de-variable)`.",
+      "example": ":root {\n  --main-color: #3498db;\n}\n\nh1 {\n  color: var(--main-color);\n}",
+      "defi": "Définis une variable CSS pour la couleur principale et utilise-la pour colorier le texte d'un titre."
+    },
+    {
+      "connaissance": "Les transitions CSS permettent d'ajouter des effets de changement progressifs à des propriétés CSS. Par exemple, une transition de couleur ou de taille peut se produire lorsqu'un élément change d'état.",
+      "example": "button {\n  transition: background-color 0.3s ease-in-out;\n}\n\nbutton:hover {\n  background-color: #ff5733;\n}",
+      "defi": "Crée un bouton dont la couleur de fond change progressivement lorsqu'il est survolé."
+    },
+    {
+      "connaissance": "Les propriétés de typographie CSS, telles que `font-family`, `font-size`, `font-weight` et `line-height`, permettent de contrôler l'apparence du texte dans une page web.",
+      "example": "p {\n  font-family: 'Arial', sans-serif;\n  font-size: 16px;\n  line-height: 1.5;\n}",
+      "defi": "Applique un style typographique à un paragraphe en utilisant une police sans-serif, une taille de police de 16px et une hauteur de ligne de 1.5."
+    },
+    {
+      "connaissance": "Le modèle d'affichage grid CSS permet de créer des mises en page complexes en divisant une page en lignes et en colonnes. Il est plus puissant que Flexbox pour gérer des mises en page bidimensionnelles.",
+      "example": ".container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 20px;\n}",
+      "defi": "Crée un conteneur grid avec trois colonnes égales et un espacement de 20px entre chaque élément."
+    },
+    {
+      "connaissance": "Les classes d'utilité CSS sont des classes pré-écrites qui appliquent des styles spécifiques à un élément, comme la couleur de fond, la marge, ou la taille de police. Elles sont souvent utilisées dans des frameworks comme Bootstrap.",
+      "example": "<div class=\"bg-blue text-white p-4\">\n  Ce div a une couleur de fond bleue et du texte blanc.\n</div>",
+      "defi": "Utilise des classes d'utilité pour styliser un élément avec une couleur de fond, du texte coloré et un remplissage."
+    },
+    {
+      "connaissance": "Le CSS Grid Layout est un système de mise en page bidimensionnel permettant de diviser un conteneur en lignes et colonnes. Il offre plus de contrôle et de flexibilité pour les mises en page complexes par rapport à Flexbox.",
+      "example": ".container {\n  display: grid;\n  grid-template-columns: 1fr 2fr 1fr;\n  grid-template-rows: auto;\n  gap: 20px;\n}\n\n.item {\n  grid-column: 2;\n  grid-row: 1;\n}",
+      "defi": "Crée une mise en page avec un conteneur grid, où une colonne occupe deux tiers de l'espace et une autre un tiers."
+    },
+    {
+      "connaissance": "Le CSS Custom Properties (variables CSS) permet de créer des variables globales qui peuvent être réutilisées dans l'ensemble du fichier CSS. Elles améliorent la maintenabilité du code en centralisant les valeurs réutilisées.",
+      "example": ":root {\n  --primary-color: #3498db;\n  --secondary-color: #2ecc71;\n}\n\nbutton {\n  background-color: var(--primary-color);\n  color: white;\n}",
+      "defi": "Crée des variables CSS pour une couleur principale et une couleur secondaire, puis applique-les à différents éléments de la page."
+    },
+    {
+      "connaissance": "Les animations CSS avec @keyframes permettent de créer des animations complexes qui changent progressivement des propriétés d'un élément au fil du temps. Elles sont souvent utilisées pour créer des effets visuels dynamiques.",
+      "example": "@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n.box {\n  animation: fadeIn 3s ease-in;\n}",
+      "defi": "Crée une animation qui fait apparaître un élément avec un fondu (transition de l'opacité) en 3 secondes."
+    },
+    {
+      "connaissance": "Les CSS Transitions permettent de définir un changement progressif de style d'un élément lorsqu'un événement comme un survol (hover) se produit. Contrairement aux animations, elles se déclenchent par un événement spécifique et sont plus simples.",
+      "example": "div {\n  background-color: #3498db;\n  transition: background-color 0.5s ease;\n}\n\ndiv:hover {\n  background-color: #2ecc71;\n}",
+      "defi": "Crée un élément qui change de couleur lorsqu'il est survolé, avec une transition en 0.5 seconde."
+    },
+    {
+      "connaissance": "Les flexbox peuvent être utilisés pour créer des mises en page réactives. Les propriétés comme `flex-grow`, `flex-shrink`, et `flex-basis` permettent de contrôler la taille des éléments dans un conteneur flexible, selon l'espace disponible.",
+      "example": ".container {\n  display: flex;\n  justify-content: space-between;\n}\n\n.item {\n  flex-grow: 1;\n  flex-basis: 200px;\n}",
+      "defi": "Crée un conteneur flexible où les éléments s'étendent de manière égale pour occuper l'espace disponible, avec une largeur de base de 200px."
+    },
+    {
+      "connaissance": "Les media queries permettent de créer des pages réactives en appliquant des styles spécifiques selon les caractéristiques du périphérique (par exemple, la largeur de l'écran). Cela permet d'adapter l'interface utilisateur aux différents types de dispositifs.",
+      "example": "@media (max-width: 768px) {\n  body {\n    font-size: 14px;\n  }\n  .container {\n    flex-direction: column;\n  }\n}",
+      "defi": "Utilise une media query pour changer la taille de la police et réorganiser les éléments en colonne lorsque la largeur de l'écran est inférieure ou égale à 768px."
+    },
+    {
+      "connaissance": "Les pseudo-éléments CSS comme `::before` et `::after` permettent de générer du contenu avant ou après un élément HTML sans modifier son contenu réel. Ils sont souvent utilisés pour ajouter des icônes, des guillemets ou d'autres éléments décoratifs.",
+      "example": "button::before {\n  content: '▶';\n  margin-right: 5px;\n}\n\nbutton {\n  padding: 10px 20px;\n}",
+      "defi": "Crée un bouton qui affiche une icône avant le texte avec le pseudo-élément `::before`."
+    },
+    {
+      "connaissance": "Le positionnement CSS avec `position: sticky` permet à un élément de se fixer à une position spécifique dans la fenêtre de visualisation lorsque l'utilisateur fait défiler la page. Cela est souvent utilisé pour créer des en-têtes ou des menus collants.",
+      "example": "header {\n  position: sticky;\n  top: 0;\n  background-color: #333;\n  color: white;\n  z-index: 100;\n}",
+      "defi": "Crée un en-tête qui reste visible en haut de la page lorsque l'utilisateur fait défiler la page."
+    },
+    {
+      "connaissance": "Les flexbox et grid peuvent être combinés pour créer des mises en page complexes, en utilisant les deux modèles en complément. Par exemple, un conteneur peut utiliser grid pour la structure principale et flex pour l'agencement des éléments à l'intérieur.",
+      "example": ".container {\n  display: grid;\n  grid-template-columns: 1fr 3fr;\n}\n\n.content {\n  display: flex;\n  justify-content: space-between;\n}",
+      "defi": "Crée une mise en page utilisant à la fois grid pour la structure générale et flex pour organiser le contenu interne."
+    },
+    {
+      "connaissance": "Le lazy loading des images (chargement différé) permet de ne charger les images qu'au moment où elles deviennent visibles dans la fenêtre de visualisation. Cela améliore la performance des pages en retardant le téléchargement des images hors écran.",
+      "example": "<img src=\"image.jpg\" alt=\"Une belle image\" loading=\"lazy\">",
+      "defi": "Implémente le lazy loading pour une image afin de différer son chargement jusqu'à ce qu'elle soit visible à l'écran."
+    },
+    {
+      "connaissance": "Les transformations CSS permettent de modifier la forme, la taille ou l'orientation d'un élément. Des transformations comme `rotate()`, `scale()`, et `translate()` peuvent être combinées pour créer des effets visuels dynamiques.",
+      "example": "div {\n  transform: rotate(45deg) scale(1.2) translateX(50px);\n}",
+      "defi": "Applique une transformation à un élément pour le faire pivoter, l'agrandir et le déplacer."
+    }
+  ]
+}
