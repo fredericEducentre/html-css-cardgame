@@ -1,9 +1,14 @@
 {
   "cards": [
     {
-      "connaissance": "La structure de base d'une page HTML est composée de plusieurs éléments : la déclaration du type de document (DOCTYPE), les balises <html>, <head> et <body>. Le <head> contient des informations sur la page, comme le titre, tandis que le <body> contient le contenu visible de la page.",
-      "example": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Exemple de page</title>\n</head>\n<body>\n  <h1>Titre principal de la page</h1>\n  <p>Ce texte est un paragraphe simple.</p>\n</body>\n</html>",
-      "defi": "Crée une page HTML avec un titre, un paragraphe et une liste à puces contenant trois éléments."
+      "connaissance": "La structure de base d'une page HTML est composée de plusieurs éléments : la déclaration du type de document (DOCTYPE), les balises <html>, <head> et <body>. Le <head> contient des informations sur la page, comme le titre, tandis que le <body> contient le contenu visible de la page. \n Trouver d'autres balises ici : https://www.w3schools.com/tags/",
+      "example": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Exemple de page</title>\n</head>\n<body>\n  <h1>Titre principal de la page</h1>\n</body>\n</html>",
+      "defi": "Générer la structure de base d'une page HTML en faisant '!' sur VSCode. Que contient la page ?"
+    },
+    {
+      "connaissance": "Une balise HTML est un élément utilisé pour structurer le contenu d'une page web. Elle est entourée de chevrons, comme <p> pour un paragraphe. La plupart des balises ont une balise d'ouverture et une balise de fermeture, par exemple <p>...</p>. Certaines, comme <img>, sont auto-fermantes. Les balises peuvent contenir des attributs pour ajouter des informations supplémentaires. \n Trouver une liste complète des balises ici : https://www.w3schools.com/tags/",
+      "example": "<p class='intro'>Ceci est un paragraphe avec une classe.</p>\n<a href='https://www.example.com'>Lien vers un site</a>\n<img src='image.jpg' alt='Description de l'image'>",
+      "defi": "Ajoute une image avec une description et un lien cliquable menant vers un autre site."
     },
     {
       "connaissance": "Les sélecteurs CSS permettent de cibler des éléments HTML pour appliquer des styles. Les sélecteurs peuvent cibler des éléments par leur balise, leur classe ou leur identifiant. Les styles incluent des propriétés comme la couleur, la taille de police et le type de police.",
